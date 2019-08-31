@@ -5,7 +5,11 @@ const addElement = function(){
     const div= document.createElement('div')
     div.textContent = number
     document.body.appendChild(div)
+    if(number%5===0){
+        div.classList.add("circle")
+    }
     
-    number= number+1
+    number++
+
     }
 btn.addEventListener("click", addElement)
