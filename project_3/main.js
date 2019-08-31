@@ -1,8 +1,13 @@
 const square = document.createElement('div')
 document.body.appendChild(square)
-square.style.width = "100px"
-square.style.height = "100px"
+
+let size = 100;
+square.style.width = size +"px"
+square.style.height = size +"px"
 
 window.addEventListener("scroll", function () {
-    
+    size +=10
+    square.style.width = size + "px"
+    square.style.height = size +"px"
+
 })
